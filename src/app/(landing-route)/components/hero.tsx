@@ -6,10 +6,10 @@ const HeroComponent = () => {
   return (
     <>
       <section className="h-screen pt-5">
-        <div className="max-w-6xl mx-auto flex flex-row items-center h-full gap-4">
-          <div className="basis-2/3">
+        <div className="max-w-6xl mx-auto lg:px-0 md:px-5 px-3 flex lg:flex-row flex-col lg:items-center justify-center lg:justify-normal h-full gap-4">
+          <div className="lg:basis-2/3">
             <h5 className="text-sm text-gray-900">Our Platform</h5>
-            <h1 className="text-5xl text-gray-900 font-medium">
+            <h1 className="md:text-5xl text-4xl text-gray-900 font-medium">
               Instant Symptom Check at your Fingertips
             </h1>
 
@@ -24,7 +24,7 @@ const HeroComponent = () => {
               </Button>
             </div>
           </div>
-          <div className="basis-1/2 h-[450px] rounded-lg overflow-hidden">
+          <div className="basis-1/2 md:block hidden h-[450px] rounded-lg overflow-hidden">
             <Image
               src={"/images/hero-image.jpg"}
               className="w-full h-full object-cover"

@@ -14,7 +14,7 @@ export default function HomeNavbar() {
     <header className="bg-white border-b fixed top-0 left-0 right-0 w-full">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-6xl items-center justify-between py-4"
+        className="mx-auto flex max-w-6xl items-center justify-between md:py-4 md:px-0 py-3 px-3"
       >
         <div className="flex lg:flex-1">
           <Logo />
@@ -26,7 +26,7 @@ export default function HomeNavbar() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <AlignJustify width={16} strokeWidth={1.25} />
+            <AlignJustify width={30} strokeWidth={1.25} />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-5">
@@ -43,7 +43,7 @@ export default function HomeNavbar() {
             Blog
           </Link>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:justify-end ml-10 gap-5">
+        <div className="hidden lg:flex lg:justify-end ml-10 gap-4">
           <Link href="/" className="outline-none no-underline">
             <Button
               variant={"outline"}
@@ -71,7 +71,7 @@ export default function HomeNavbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Logo />
             <button
@@ -80,7 +80,7 @@ export default function HomeNavbar() {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
-              <X width={16} />
+              <X width={30} />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -99,13 +99,28 @@ export default function HomeNavbar() {
                   Blog
                 </Link>
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
+              <div className="py-4">
+                <div className="flex justify-start gap-4">
+                  <Link href="/" className="outline-none no-underline">
+                    <Button
+                      variant={"outline"}
+                      size={"default"}
+                      className="outline-none"
+                    >
+                      Log in
+                    </Button>
+                  </Link>
+
+                  <Link href="/" className="outline-none no-underline">
+                    <Button
+                      variant={"primary"}
+                      size={"default"}
+                      className="outline-none"
+                    >
+                      Start Assessment
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

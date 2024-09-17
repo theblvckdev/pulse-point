@@ -14,7 +14,7 @@ export default function HomeNavbar() {
     <header className="bg-white border-b fixed top-0 left-0 right-0 w-full">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-6xl items-center justify-between md:py-4 md:px-0 py-3 px-3"
+        className="mx-auto flex max-w-6xl items-center justify-between md:py-4 lg:px-4 xl:px-0 py-3 px-3"
       >
         <div className="flex lg:flex-1">
           <Logo />
@@ -71,7 +71,7 @@ export default function HomeNavbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white md:p-4 p-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Logo />
             <button
@@ -88,13 +88,13 @@ export default function HomeNavbar() {
               <div className="space-y-2 py-6">
                 <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </Link>
                 <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Blog
                 </Link>
